@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Smart Office Security</title>
+
+<link rel="stylesheet" href="Assets/CSS/style.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <a href="dashboard.html" class="side-brand">
+
+        <div class="side-logo">
+
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+                <path
+                    d="M8.5 12L10.8 14.3L15.8 9.4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+            </svg>
+
+        </div>
+
+        <div>
+            <strong>SMART OFFICE</strong>
+            <span>SECURITY CENTER</span>
+        </div>
+
+    </a>
+
+
+    <div class="nav-section">
+
+        <small>SECURITY OPERATIONS</small>
+
+        <nav>
+
+            <a href="dashboard.html" class="active">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor"/>
+                </svg>
+
+                Dashboard
+
+            </a>
+
+
+            <a href="employees.html">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="9" cy="8" r="3" stroke="currentColor"/>
+                    <path d="M3 20C3 16.7 5.7 14 9 14C12.3 14 15 16.7 15 20" stroke="currentColor"/>
+                    <path d="M16 5C18.2 5.2 20 7 20 9.2C20 11.2 18.5 12.8 16.5 13" stroke="currentColor"/>
+                </svg>
+
+                Employees
+
+            </a>
+
+
+            <a href="security.html">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z"
+                        stroke="currentColor"
+                    />
+
+                    <path
+                        d="M9 12L11 14L15 10"
+                        stroke="currentColor"
+                    />
+                </svg>
+
+                Defense in Depth
+
+            </a>
+
+
+            <a href="network.html">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="5" r="2.5" stroke="currentColor"/>
+                    <circle cx="5" cy="18" r="2.5" stroke="currentColor"/>
+                    <circle cx="19" cy="18" r="2.5" stroke="currentColor"/>
+                    <path d="M12 7.5V12M12 12L5 15.5M12 12L19 15.5" stroke="currentColor"/>
+                </svg>
+
+                Network
+
+            </a>
+
+
+            <a href="reports.html">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 20V10" stroke="currentColor"/>
+                    <path d="M12 20V4" stroke="currentColor"/>
+                    <path d="M19 20V8" stroke="currentColor"/>
+                </svg>
+
+                Reports
+
+            </a>
+
+
+            <a href="settings.html">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="3" stroke="currentColor"/>
+                    <path
+                        d="M19 12C19 11.4 18.9 10.8 18.7 10.3L20.2 9.1L18.2 5.8L16.3 6.6C15.5 5.9 14.6 5.5 13.6 5.3L13.3 3H9.5L9.2 5.3C8.2 5.5 7.3 5.9 6.5 6.6L4.6 5.8L2.6 9.1L4.1 10.3C3.9 10.8 3.8 11.4 3.8 12C3.8 12.6 3.9 13.2 4.1 13.7L2.6 14.9L4.6 18.2L6.5 17.4C7.3 18.1 8.2 18.5 9.2 18.7L9.5 21H13.3L13.6 18.7C14.6 18.5 15.5 18.1 16.3 17.4L18.2 18.2L20.2 14.9L18.7 13.7C18.9 13.2 19 12.6 19 12Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                    />
+                </svg>
+
+                Settings
+
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="live-status">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button onclick="logout()" class="logout-btn">
+
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M10 17L15 12L10 7" stroke="currentColor"/>
+                <path d="M15 12H3" stroke="currentColor"/>
+                <path d="M21 4V20" stroke="currentColor"/>
+            </svg>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <div class="page-kicker">SECURITY OPERATIONS</div>
+            <h1>Security Dashboard</h1>
+            <p>Real-time overview of your office security infrastructure.</p>
+        </div>
+
+        <div class="top-status">
+            <span></span>
+            ALL SYSTEMS OPERATIONAL
+        </div>
+
+    </header>
+
+
+    <!-- STATS -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <div class="stat-icon cyan">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="3" stroke="currentColor"/>
+                    <path d="M5 21C5 17.1 8.1 14 12 14C15.9 14 19 17.1 19 21" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <span class="stat-label">TOTAL EMPLOYEES</span>
+
+            <strong>25</strong>
+
+            <small class="green-text">+3 this month</small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon blue">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <span class="stat-label">SECURITY SCORE</span>
+
+            <strong>98%</strong>
+
+            <small class="green-text">Excellent protection</small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon green">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 17L9 12L13 16L20 8" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <span class="stat-label">THREATS BLOCKED</span>
+
+            <strong>142</strong>
+
+            <small class="green-text">Last 30 days</small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon purple">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="8" stroke="currentColor"/>
+                    <path d="M12 8V12L15 14" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <span class="stat-label">UPTIME</span>
+
+            <strong>99.9%</strong>
+
+            <small class="green-text">30 day average</small>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <!-- SECURITY SCORE -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="panel-kicker">SECURITY HEALTH</span>
+                    <h2>Overall Security Score</h2>
+                </div>
+
+                <span class="online-badge">PROTECTED</span>
+
+            </div>
+
+
+            <div class="security-score-content">
+
+                <div class="score-ring">
+
+                    <div class="score-inner">
+
+                        <strong>98</strong>
+                        <span>SECURITY SCORE</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="score-details">
+
+                    <h3>Excellent Security</h3>
+
+                    <p>
+                        Your security infrastructure is operating
+                        within optimal protection levels.
+                    </p>
+
+                    <div class="score-line">
+                        <span>Identity Protection</span>
+                        <strong>100%</strong>
+                    </div>
+
+                    <div class="mini-progress">
+                        <div style="width:100%"></div>
+                    </div>
+
+                    <div class="score-line">
+                        <span>Network Defense</span>
+                        <strong>98%</strong>
+                    </div>
+
+                    <div class="mini-progress">
+                        <div style="width:98%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- THREAT MONITOR -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="panel-kicker">LIVE MONITOR</span>
+                    <h2>Threat Activity</h2>
+                </div>
+
+                <span class="live-indicator">
+                    <i></i> LIVE
+                </span>
+
+            </div>
+
+
+            <div class="threat-list">
+
+                <div class="threat-row">
+
+                    <div class="threat-symbol safe">
+                        OK
+                    </div>
+
+                    <div class="threat-info">
+                        <strong>Firewall Protection</strong>
+                        <span>All traffic monitored</span>
+                    </div>
+
+                    <b>SECURE</b>
+
+                </div>
+
+
+                <div class="threat-row">
+
+                    <div class="threat-symbol safe">
+                        OK
+                    </div>
+
+                    <div class="threat-info">
+                        <strong>Endpoint Security</strong>
+                        <span>25 devices protected</span>
+                    </div>
+
+                    <b>SECURE</b>
+
+                </div>
+
+
+                <div class="threat-row">
+
+                    <div class="threat-symbol warning">
+                        !
+                    </div>
+
+                    <div class="threat-info">
+                        <strong>Access Attempts</strong>
+                        <span>3 blocked attempts</span>
+                    </div>
+
+                    <b class="yellow-text">MONITOR</b>
+
+                </div>
+
+
+                <div class="threat-row">
+
+                    <div class="threat-symbol safe">
+                        OK
+                    </div>
+
+                    <div class="threat-info">
+                        <strong>Database Security</strong>
+                        <span>Connection encrypted</span>
+                    </div>
+
+                    <b>SECURE</b>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="panel-kicker">NETWORK CONTROL</span>
+                    <h2>Firewall Status</h2>
+                </div>
+
+            </div>
+
+            <div class="firewall-content">
+
+                <div class="firewall-icon">
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8.5 12L10.8 14.3L15.8 9.4" stroke="currentColor" stroke-width="1.7"/>
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Firewall Active</h3>
+
+                    <p>
+                        All inbound and outbound traffic is being
+                        inspected and filtered.
+                    </p>
+
+                    <span class="firewall-live">
+                        PROTECTION ACTIVE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="panel-kicker">INFRASTRUCTURE</span>
+                    <h2>System Health</h2>
+                </div>
+
+            </div>
+
+            <div class="health-list">
+
+                <div>
+                    <span>Servers</span>
+                    <strong>03 / 03</strong>
+                </div>
+
+                <div>
+                    <span>Network Devices</span>
+                    <strong>12 / 12</strong>
+                </div>
+
+                <div>
+                    <span>Security Sensors</span>
+                    <strong>08 / 08</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="Assets/JAVA Script/script.js"></script>
+
+</body>
+</html>

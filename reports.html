@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports | Smart Office Security</title>
+
+<link rel="stylesheet" href="Assets/CSS/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <a href="dashboard.html" class="side-brand">
+
+        <div class="side-logo">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor"/>
+            </svg>
+        </div>
+
+        <div>
+            <strong>SMART OFFICE</strong>
+            <span>SECURITY CENTER</span>
+        </div>
+
+    </a>
+
+    <div class="nav-section">
+
+        <small>SECURITY OPERATIONS</small>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="security.html">Defense in Depth</a>
+            <a href="network.html">Network</a>
+            <a href="reports.html" class="active">Reports</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+        <div class="live-status">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <div class="page-kicker">SECURITY ANALYTICS</div>
+            <h1>Security Reports</h1>
+            <p>Review security activity and infrastructure performance.</p>
+        </div>
+
+        <div class="top-status">
+            <span></span>
+            REPORTING ACTIVE
+        </div>
+
+    </header>
+
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <span class="stat-label">THREATS BLOCKED</span>
+
+            <strong>142</strong>
+
+            <small class="green-text">+18% from previous period</small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-label">SECURITY SCORE</span>
+
+            <strong>98%</strong>
+
+            <small class="green-text">Excellent</small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-label">NETWORK STATUS</span>
+
+            <strong>ONLINE</strong>
+
+            <small class="green-text">All systems operational</small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-label">SERVER STATUS</span>
+
+            <strong>03 / 03</strong>
+
+            <small class="green-text">Running normally</small>
+
+        </div>
+
+    </section>
+
+
+    <section class="panel chart-panel">
+
+        <div class="panel-header">
+
+            <div>
+                <span class="panel-kicker">THREAT ANALYTICS</span>
+                <h2>Security Activity</h2>
+            </div>
+
+            <span class="record-count">
+                LAST 7 DAYS
+            </span>
+
+        </div>
+
+
+        <div class="chart-box">
+
+            <canvas id="securityChart"></canvas>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="panel-kicker">ACCESS CONTROL</span>
+                    <h2>Access Events</h2>
+                </div>
+
+            </div>
+
+            <div class="report-list">
+
+                <div>
+                    <span>Successful Logins</span>
+                    <strong>284</strong>
+                </div>
+
+                <div>
+                    <span>Blocked Attempts</span>
+                    <strong class="yellow-text">14</strong>
+                </div>
+
+                <div>
+                    <span>Privileged Access</span>
+                    <strong>31</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="panel-kicker">SYSTEM PERFORMANCE</span>
+                    <h2>Infrastructure</h2>
+                </div>
+
+            </div>
+
+            <div class="report-list">
+
+                <div>
+                    <span>CPU Usage</span>
+                    <strong>31%</strong>
+                </div>
+
+                <div>
+                    <span>Memory Usage</span>
+                    <strong>47%</strong>
+                </div>
+
+                <div>
+                    <span>Network Load</span>
+                    <strong>22%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="Assets/JAVA Script/script.js"></script>
+
+</body>
+</html>
