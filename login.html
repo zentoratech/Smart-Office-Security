@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Office Security Center</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="login-page">
+
+<div class="login-wrapper">
+
+    <!-- LEFT SIDE -->
+    <section class="login-brand">
+
+        <div class="brand-shield">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+                <path
+                    d="M8.5 12L10.8 14.3L15.8 9.4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </div>
+
+        <div class="eyebrow">
+            SECURITY OPERATIONS PLATFORM
+        </div>
+
+        <h1>
+            Smart Office<br>
+            Security Center
+        </h1>
+
+        <p class="brand-description">
+            A professional security monitoring platform designed to
+            protect identities, endpoints, networks and critical
+            office infrastructure.
+        </p>
+
+        <div class="security-features">
+
+            <div class="feature-box">
+                <span>01</span>
+                <strong>Identity Protection</strong>
+            </div>
+
+            <div class="feature-box">
+                <span>02</span>
+                <strong>Network Defense</strong>
+            </div>
+
+            <div class="feature-box">
+                <span>03</span>
+                <strong>Threat Monitoring</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT SIDE -->
+    <section class="login-card">
+
+        <div class="login-label">
+            AUTHORIZED ACCESS
+        </div>
+
+        <h2>Secure Sign In</h2>
+
+        <p class="login-subtitle">
+            Authenticate to access the security operations dashboard.
+        </p>
+
+        <form id="loginForm" class="login-form">
+
+            <div class="input-group">
+
+                <label>USERNAME</label>
+
+                <div class="input-wrapper">
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M20 21C20 17.7 16.4 15 12 15C7.6 15 4 17.7 4 21"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="4"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                        />
+                    </svg>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>PASSWORD</label>
+
+                <div class="input-wrapper">
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect
+                            x="4"
+                            y="10"
+                            width="16"
+                            height="11"
+                            rx="2"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                        />
+
+                        <path
+                            d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                        />
+                    </svg>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="login-options">
+
+                <label class="remember">
+
+                    <input type="checkbox" id="remember">
+
+                    <span>Remember session</span>
+
+                </label>
+
+                <a href="#" onclick="forgotPassword(event)">
+                    Forgot password?
+                </a>
+
+            </div>
+
+
+            <button type="submit" class="authenticate-btn">
+
+                <svg viewBox="0 0 24 24" fill="none">
+                    <rect
+                        x="5"
+                        y="10"
+                        width="14"
+                        height="10"
+                        rx="2"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    />
+
+                    <path
+                        d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    />
+                </svg>
+
+                Authenticate Securely
+
+            </button>
+
+        </form>
+
+
+        <div class="login-security-status">
+
+            <div>
+                <span class="status-dot"></span>
+                Protected by Defense in Depth
+            </div>
+
+            <small>
+                ENCRYPTED SECURITY SESSION
+            </small>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="Assets/script.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

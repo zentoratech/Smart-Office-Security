@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Employee | Smart Office Security</title>
+
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <a href="dashboard.html" class="side-brand">
+
+        <div class="side-logo">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor"/>
+            </svg>
+        </div>
+
+        <div>
+            <strong>SMART OFFICE</strong>
+            <span>SECURITY CENTER</span>
+        </div>
+
+    </a>
+
+    <div class="nav-section">
+
+        <small>SECURITY OPERATIONS</small>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html" class="active">Employees</a>
+            <a href="security.html">Defense in Depth</a>
+            <a href="network.html">Network</a>
+            <a href="reports.html">Reports</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+        <div class="live-status">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <div class="page-kicker">IDENTITY MANAGEMENT</div>
+            <h1>Add Employee</h1>
+            <p>Create a new employee security profile.</p>
+        </div>
+
+    </header>
+
+
+    <section class="panel form-panel">
+
+        <div class="panel-header">
+
+            <div>
+                <span class="panel-kicker">NEW IDENTITY</span>
+                <h2>Employee Information</h2>
+            </div>
+
+        </div>
+
+
+        <form id="employeeForm" class="security-form">
+
+            <div class="form-grid">
+
+                <div class="input-group">
+
+                    <label>FULL NAME</label>
+
+                    <input
+                        type="text"
+                        id="empName"
+                        placeholder="Enter full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>DEPARTMENT</label>
+
+                    <input
+                        type="text"
+                        id="empDept"
+                        placeholder="Enter department"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>DESIGNATION</label>
+
+                    <input
+                        type="text"
+                        id="empRole"
+                        placeholder="Enter designation"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>ACCESS LEVEL</label>
+
+                    <select id="empAccess" required>
+
+                        <option value="Standard">Standard</option>
+                        <option value="Elevated">Elevated</option>
+                        <option value="Administrator">Administrator</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-note">
+
+                <span></span>
+
+                New identities are automatically registered
+                with the security monitoring system.
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <a href="employees.html" class="secondary-btn">
+                    Cancel
+                </a>
+
+                <button type="submit" class="primary-btn">
+                    Create Employee
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="Assets/script.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Defense in Depth | Smart Office Security</title>
+
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <a href="dashboard.html" class="side-brand">
+
+        <div class="side-logo">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor"/>
+            </svg>
+        </div>
+
+        <div>
+            <strong>SMART OFFICE</strong>
+            <span>SECURITY CENTER</span>
+        </div>
+
+    </a>
+
+    <div class="nav-section">
+
+        <small>SECURITY OPERATIONS</small>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="security.html" class="active">Defense in Depth</a>
+            <a href="network.html">Network</a>
+            <a href="reports.html">Reports</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+        <div class="live-status">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <div class="page-kicker">SECURITY ARCHITECTURE</div>
+            <h1>Defense in Depth</h1>
+            <p>Multiple security layers protect the Smart Office environment.</p>
+        </div>
+
+        <div class="top-status">
+            <span></span>
+            7 LAYERS ACTIVE
+        </div>
+
+    </header>
+
+
+    <section class="security-grid">
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">01</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Perimeter Security</h3>
+
+            <p>
+                Controls physical and external access to
+                the office environment.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">02</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="5" r="2.5" stroke="currentColor"/>
+                    <circle cx="5" cy="18" r="2.5" stroke="currentColor"/>
+                    <circle cx="19" cy="18" r="2.5" stroke="currentColor"/>
+                    <path d="M12 7.5V12M12 12L5 15.5M12 12L19 15.5" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Network Security</h3>
+
+            <p>
+                Firewall and network segmentation protect
+                internal traffic.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">03</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="4" y="5" width="16" height="12" rx="2" stroke="currentColor"/>
+                    <path d="M8 21H16M12 17V21" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Endpoint Security</h3>
+
+            <p>
+                Workstations and devices are continuously
+                monitored for suspicious activity.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">04</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 5H19V19H5V5Z" stroke="currentColor"/>
+                    <path d="M8 9H16M8 13H14" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Application Security</h3>
+
+            <p>
+                Applications are protected against unauthorized
+                access and malicious activity.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">05</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor"/>
+                    <path d="M5 6V12C5 13.7 8.1 15 12 15C15.9 15 19 13.7 19 12V6" stroke="currentColor"/>
+                    <path d="M5 12V18C5 19.7 8.1 21 12 21C15.9 21 19 19.7 19 18V12" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Data Security</h3>
+
+            <p>
+                Sensitive business data is protected using
+                encryption and access controls.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">06</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="3" stroke="currentColor"/>
+                    <path d="M5 21C5 17.7 8.1 15 12 15C15.9 15 19 17.7 19 21" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Identity & Access</h3>
+
+            <p>
+                Employee access is controlled through
+                identity-based security policies.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+        <div class="security-layer">
+
+            <span class="layer-number">07</span>
+
+            <div class="layer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12C20 16.4 16.4 20 12 20C7.6 20 4 16.4 4 12Z" stroke="currentColor"/>
+                    <path d="M12 8V12L15 14" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3>Monitoring & Response</h3>
+
+            <p>
+                Security events are continuously monitored
+                for rapid threat response.
+            </p>
+
+            <span class="layer-active">ACTIVE</span>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+<script src="Assets/script.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

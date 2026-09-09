@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Network | Smart Office Security</title>
+
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <a href="dashboard.html" class="side-brand">
+
+        <div class="side-logo">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 6V11.5C20 16.5 16.7 20.1 12 21C7.3 20.1 4 16.5 4 11.5V6L12 3Z" stroke="currentColor"/>
+            </svg>
+        </div>
+
+        <div>
+            <strong>SMART OFFICE</strong>
+            <span>SECURITY CENTER</span>
+        </div>
+
+    </a>
+
+    <div class="nav-section">
+
+        <small>SECURITY OPERATIONS</small>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="security.html">Defense in Depth</a>
+            <a href="network.html" class="active">Network</a>
+            <a href="reports.html">Reports</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+        <div class="live-status">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <div class="page-kicker">NETWORK OPERATIONS</div>
+            <h1>Network Security</h1>
+            <p>Monitor connected infrastructure and security controls.</p>
+        </div>
+
+        <div class="top-status">
+            <span></span>
+            NETWORK ONLINE
+        </div>
+
+    </header>
+
+
+    <section class="network-grid">
+
+
+        <div class="network-card">
+
+            <div class="network-card-top">
+
+                <div class="network-icon">
+                    ROUTER
+                </div>
+
+                <span class="device-online">ONLINE</span>
+
+            </div>
+
+            <h3>Core Router</h3>
+
+            <p>Primary network gateway</p>
+
+            <strong>10.0.0.1</strong>
+
+        </div>
+
+
+        <div class="network-card">
+
+            <div class="network-card-top">
+
+                <div class="network-icon">
+                    FW
+                </div>
+
+                <span class="device-online">ACTIVE</span>
+
+            </div>
+
+            <h3>Firewall</h3>
+
+            <p>Traffic inspection system</p>
+
+            <strong>142 BLOCKED</strong>
+
+        </div>
+
+
+        <div class="network-card">
+
+            <div class="network-card-top">
+
+                <div class="network-icon">
+                    SRV
+                </div>
+
+                <span class="device-online">ONLINE</span>
+
+            </div>
+
+            <h3>Servers</h3>
+
+            <p>Critical infrastructure</p>
+
+            <strong>03 / 03 RUNNING</strong>
+
+        </div>
+
+
+        <div class="network-card">
+
+            <div class="network-card-top">
+
+                <div class="network-icon">
+                    PC
+                </div>
+
+                <span class="device-online">CONNECTED</span>
+
+            </div>
+
+            <h3>Workstations</h3>
+
+            <p>Protected endpoints</p>
+
+            <strong>25 DEVICES</strong>
+
+        </div>
+
+
+        <div class="network-card">
+
+            <div class="network-card-top">
+
+                <div class="network-icon">
+                    CCTV
+                </div>
+
+                <span class="device-online">ACTIVE</span>
+
+            </div>
+
+            <h3>Security Cameras</h3>
+
+            <p>Physical monitoring</p>
+
+            <strong>12 CAMERAS</strong>
+
+        </div>
+
+
+        <div class="network-card">
+
+            <div class="network-card-top">
+
+                <div class="network-icon">
+                    AP
+                </div>
+
+                <span class="device-online">ONLINE</span>
+
+            </div>
+
+            <h3>Access Points</h3>
+
+            <p>Wireless infrastructure</p>
+
+            <strong>08 CONNECTED</strong>
+
+        </div>
+
+    </section>
+
+
+    <section class="panel">
+
+        <div class="panel-header">
+
+            <div>
+                <span class="panel-kicker">TOPOLOGY</span>
+                <h2>Network Architecture</h2>
+            </div>
+
+            <span class="record-count">
+                REAL-TIME VIEW
+            </span>
+
+        </div>
+
+
+        <div class="network-topology">
+
+            <div class="topology-node main-node">
+
+                <span>INTERNET</span>
+
+            </div>
+
+
+            <div class="topology-line"></div>
+
+
+            <div class="topology-node">
+
+                <span>FIREWALL</span>
+
+                <small>PROTECTED</small>
+
+            </div>
+
+
+            <div class="topology-line"></div>
+
+
+            <div class="topology-row">
+
+                <div class="topology-node">
+                    <span>SERVER 01</span>
+                    <small>ONLINE</small>
+                </div>
+
+                <div class="topology-node">
+                    <span>SERVER 02</span>
+                    <small>ONLINE</small>
+                </div>
+
+                <div class="topology-node">
+                    <span>SERVER 03</span>
+                    <small>ONLINE</small>
+                </div>
+
+                <div class="topology-node">
+                    <span>ENDPOINTS</span>
+                    <small>25 ACTIVE</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="Assets/script.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
